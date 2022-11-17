@@ -44,7 +44,7 @@ CREATE TABLE tipo_transacao (
 	data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-*/DROP TABLE cliente_transacoes;*/
+/*DROP TABLE cliente_transacoes;*/
 
 CREATE TABLE cliente_transacoes (
 	id BIGSERIAL PRIMARY KEY,
