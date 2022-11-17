@@ -1,0 +1,17 @@
+INSERT INTO banco(numero, nome) VALUES(6314, 'Banco Santander'::VARCHAR(50));
+
+INSERT INTO agencia(banco_numero, numero, nome) VALUES(6314, 1, 'Agencia numero 1 do Banco Santander');
+
+INSERT INTO cliente(numero, nome, email) VALUES(73123, 'Carlos de Souza', 'carlosza@yahoo.com');
+
+INSERT INTO conta_corrente(banco_numero, agencia_numero, numero, digito, cliente_numero) 	VALUES(6314, 1, 8534564, 4, 73123);
+
+INSERT INTO tipo_transacao(nome) VALUES('Débito');
+INSERT INTO tipo_transacao(nome) VALUES('Crédito');
+INSERT INTO tipo_transacao(nome) VALUES('Transferência');
+INSERT INTO tipo_transacao(nome) VALUES('Empréstimo');
+
+INSERT INTO cliente_transacoes(banco_numero, agencia_numero, conta_corrente_numero, conta_corrente_digito, cliente_numero, tipo_transacao_id, valor) VALUES(6314, 1, 8534564, 4, 73123, 3, 450.500);
+
+
+/*SELECT * FROM banco, agencia, cliente, conta_corrente, tipo_transacao, cliente_transacoes;*/
